@@ -9,27 +9,38 @@
 <body>
 
     <div class="wrapper">
-        <div id="screen" class="screen"></div>
+        <div class="output">
+            <div class="previous-operand"></div>
+            <div class="current-operand"></div>
+        </div>
+
         <div class="keys">
-        <button id="plus" class="plus">+</button>
-        <button id="subtract" class="subtract">-</button>
-        <button id="multiple" class="multiple">*</button>
-        <button id="divide" class="divide">/</button>
-        <button id="one" class="one" value="1" name="one">1</button>
-        <button id="two" class="two" value="2" name="two">2</button>
-        <button id="three" class="three" value="3" name="three">3</button>
-        <button id="four" class="four" value="4" name="foure">4</button>
-        <button id="five" class="five" value="5" name="five">5</button>
-        <button id="six" class="six" value="6" name="six">6</button>
-        <button id="seven" class="seven" value="7" name="seven">7</button>
-        <button id="eight" class="eight" value="8" name="eight">8</button>
-        <button id="none" class="none" value="9" name="none">9</button>
-        <button id="zero" class="zero" value="0" name="zero">0</button>
-        <button id="doit" class="doit" value="." name="doit">.</button>
-        <button id="delete" class="delete" value="">C</button>
+    
+        <button id="operation" class="plus">+</button>
+        <button id="operation" class="subtract">-</button>
+        <button id="operation" class="multiple">*</button>
+        <button id="operation" class="divide">/</button>
+        
+        
+        <button id="one" class="number" value="1" name="one">1</button>
+        <button id="two" class="number" value="2" name="two">2</button>
+        <button id="three" class="number" value="3" name="three">3</button>
+        <button id="four" class="number" value="4" name="four">4</button>
+        <button id="five" class="number" value="5" name="five">5</button>
+        <button id="six" class="number" value="6" name="six">6</button>
+        <button id="seven" class="number" value="7" name="seven">7</button>
+        <button id="eight" class="number" value="8" name="eight">8</button>
+        <button id="none" class="number" value="9" name="none">9</button>
+        <button id="zero" class="number" value="0" name="zero">0</button>
+
+        
+        <button id="number" class="number" value="." name="doit">.</button>
+        <button id="clear" class="clear" value="">C</button>
+        <button id="del" class="del" value="" name="doit">del</button>
         <button id="equal" class="equal" value="">=</button>
         </div>
     </div>
     
+    <script src="js/app.js"></script>
 </body>
 </html>

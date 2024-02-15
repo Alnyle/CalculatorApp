@@ -11,13 +11,16 @@ html {
 
 body {
     background-color: #46afe0;
+    min-height: 100vh;
+    font-family: Gotham Rounded, sans-serif;
 }
 
 .wrapper {
     display: grid;
+    min-height: 100vh;
     place-content: center;
-    margin: 10rem auto;
-    max-width: 1000px;
+    margin: auto auto;
+    max-width: 1200px;
     
 }
 
@@ -29,17 +32,36 @@ button {
     font-size: 2.4rem;
 }
 
-.screen {
-    height: 200px;
+.output {
+    min-height: 15rem;
     background-color: rgb(27, 27, 27);
-
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
 }
+
+
+
+.output .previous-operand {
+    color: rgb(255, 255, 255, .75);
+    font-size: 2rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 4rem;
+}
+
 
 .keys {
     display: grid;
     grid-template-areas:
         ". . . .",
-        ". . . equal"
+        ". . . del"
         ". . . equal"
         ". . . equal"
         ". . . equal";
@@ -54,7 +76,7 @@ button {
 
 .equal {
     grid-area: equal;
-    grid-row: 2/6;
+    grid-row: 3/6;
     background-color: rgb(230,92,79);
 }
 
