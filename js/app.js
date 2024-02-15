@@ -107,17 +107,4 @@ deleteButton.addEventListener("click", () => {
     secondNumber = secondNumber.slice(0, -1);
     currentOperandTextElement.textContent = secondNumber;
   }
-
-  // if (firstNumber !== '') return;
-  // if(secondNumber !== '') {
-  //   secondNumber = secondNumber.slice(0, -1);
-  //   currentOperandTextElement.textContent = secondNumber;
-  // }
-
-  // if (currentOperation === previousOperandTextElement.textContent[-1]) {
-  //   currentOperation = undefined;
-  //   firstNumber = previousOperandTextElement.textContent;
-  //   currentOperandTextElement.textContent = previousOperandTextElement.textContent;
-  //   previousOperandTextElement.textContent = '';
-  // }
 });
